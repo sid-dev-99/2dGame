@@ -26,6 +26,7 @@ func main(){
 
 	isRunning := true
 
+
 	for isRunning{
 
 
@@ -46,6 +47,8 @@ func main(){
 			case 'q':
 				isRunning = false
 			case 'a':
+				Sprite.x++
+
 			}
 		}
 

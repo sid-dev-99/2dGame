@@ -1,14 +1,15 @@
 package main
 
-type Sprite interface(){
+type Sprite struct {
 	X int
 	Y int
-	C rune 
-	
+	C rune
 }
 
-
-
-func main(){
-
+func NewSprite(x int, y int, char rune) *Sprite {
+	return &Sprite{
+		X: x,
+		Y: y,
+		C: char,
+	}
 }
